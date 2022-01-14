@@ -100,6 +100,12 @@ pacman -S --needed git base-devel yay
 | `yay -Syu --devel`                | Perform system upgrade, but also check for development package updates.                             |
 | `yay -Syu --timeupdate`           | Perform system upgrade and use PKGBUILD modification time (not version number) to determine update. |
 
+## Rolling back to a previous version of a package
+
+By default, yay will cache packages in `~/.cache/yay/<package>`
+
+If you have a cached version you want to roll back to, you can do so with pacman, by following [the instructions found in the Arch Wiki](https://wiki.archlinux.org/title/Downgrading_packages) and using the path to yay's cached version.
+
 ## Frequently Asked Questions
 
 - **Yay does not display colored output. How do I fix it?**
